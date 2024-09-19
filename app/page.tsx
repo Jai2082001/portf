@@ -1,95 +1,101 @@
-import Image from "next/image";
 import styles from "./page.module.css";
+
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+    <div className={styles.page1}>
+      <div className={styles.page}>
+        <main className={styles.main}>
+          <div className={styles.mainSubDiv}>
+            <div>
+              Jaideep Grover
+            </div>
+            <div>
+              <ul>
+                <li>Programming</li>
+                <li>Cloud</li>
+                <li>Personal</li>
+              </ul>
+            </div>
+          </div>
+          <div className={styles.content}>
+            <p> Hi, I'm Jaideep Grover, a passionate full-stack developer with hands-on experience in building and deploying applications. I have successfully self-deployed multiple projects, utilizing both front-end and back-end technologies. Along with my technical skills, I hold certifications like AZ-900 and AZ-204, showcasing my understanding of cloud platforms like AWS and Azure. Currently, I am expanding my expertise by preparing for the VCP-Data Center Virtualization certification, aiming to deepen my knowledge in cloud infrastructure and virtualization.
+            </p>
+          </div>
+        </main>
+        <div className={styles.projectDiv}>
+          Projects
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <div className={styles.projectContainer}>
+          <div className={styles.container}>
+
+          </div>
+          <div className={styles.container}>
+
+          </div>
+          <div className={styles.container}>
+
+          </div>
+          <div className={styles.container}>
+
+          </div>
+        </div>
+        <div className={styles.experience}>
+          Experience
+          <div>
+            <div>
+              Image
+            </div>
+            <div>
+              Content
+            </div>
+
+            <div>
+              Image
+            </div>
+            <div>
+              Content
+            </div>
+
+            <div>
+              Image
+            </div>
+            <div>
+              Content
+            </div>
+          </div>
+        </div>
+        <div className={styles.education}>
+          Education
+
+          <div>
+            <div>
+          
+            </div>
+            <div>
+
+            </div>
+          </div>
+          <div>
+
+          </div>
+          <div>
+
+          </div>
+          <div>
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+          </div>
+
+          <div>
+
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
