@@ -42,4 +42,4 @@ jobs:
           sudo docker pull jaideepgrover/port:latest
           sudo docker stop port || true
           sudo docker rm port || true
-          sudo docker run -d --name vir -p 3000:3000 jaideepgrover/port:latest
+          sudo docker run -d --name port -p 3000:3000 jaideepgrover/port:latest
