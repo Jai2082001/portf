@@ -1,104 +1,213 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-.page1{
-  width: 100vw; 
+.page1 {
+  width: 100vw;
   display: flex;
   justify-content: center;
   font-family: "Poppins", sans-serif;
 }
 
-.page{
+.page {
   display: flex;
-  max-width: 50vw;
   flex-direction: column;
   align-items: center;
-  padding: 50px 20px; 
-  
+  padding: 50px 20px;
+  padding-bottom: 0px;
+  max-width: 80vw;
 }
-.main{
-  min-width: 40%;
+
+.main {
+  min-width: 60%;
 }
-.mainSubDiv{
+
+.mainSubDiv {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
+
 .mainSubDiv div ul {
   display: flex;
   list-style: none;
 }
-.mainSubDiv li{
+
+.mainSubDiv li {
   margin: 0px 10px;
   transition: 0.5s all ease-in-out;
 }
-.mainSubDiv li:hover{
+
+.mainSubDiv li:hover {
   cursor: pointer;
   padding-bottom: 5px;
-  border-bottom: 1px solid white
+  border-bottom: 1px solid white;
 }
-.content{
+
+.content {
   line-height: 1.7;
-  margin-top: 70px; 
+  margin-top: 30px;
+  animation: slideIn 1s ease-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.projectDiv{
-  margin: 50px 0px; 
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
-.projectContainer{
+
+.projectDiv {
+  margin: 50px 0px;
+}
+
+.projectContainer {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
-  
+  grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+  gap: 20px;
 }
-.container{
-  
-  background-color: white;
+
+.container {
+  background-color: rgb(39, 39, 39);
+  padding: 20px;
+  display: flex;
+  gap: 40px;
   height: 200px;
   margin: 10px;
+  border-radius: 8px;
 }
-.experience{
-  margin: 30px 0px;
+.containerImage{
+  font-size: 12px;
+  width: 40%;
+}
+.containerLink{
+  background-color:white;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  border-radius: 20px;
+}
+.containerText{
 
+}
+
+.experience {
+  margin: 30px 0px;
   text-align: center;
 }
-.subexperience{
+
+.subexperience {
   display: flex;
   margin: 40px 0px;
 }
-.imageContainer{
+
+.imageContainer {
   border-radius: 50%;
   margin-right: 50px;
   width: 150px;
   height: 150px;
 }
-.expPoints{
+
+.expPoints {
   line-height: 2;
- font-size: 14px;
+  font-size: 14px;
+  background-color: rgba(59, 59, 59, 0.2);
+  padding: 10px 20px;
+  border-radius: 8px;
 }
-.education{
-  text-align: center;
-  
-}
-.skillsDiv{
-  display: flex;
-}
-.skillDiv{
-  line-height: 1.5;
-  background-color: rgb(236, 234, 234);
-  margin: 10px;
-  color: black;
-  min-width: 250px;
-  padding: 30px;
-  border-radius: 15px;
-  transition: all 0.5s ease-in-out;
-}
-.skillDiv:hover{
-  transform: translateY(-20px);
-  cursor: pointer;
-}
-.skillDiv ul{
-  margin: 20px 0px;
+
+.expPoints ul {
   list-style-type: none;
 }
-.skillDiv ul li{
-  margin: 10px 0px;
+
+.education {
+  text-align: center;
+}
+
+.skillsTitle {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+.skillsSlider {
+  display: flex;
+  overflow: hidden;
+  padding: 20px;
+  background-color: #333;
+  width: 100vw;
+  position: relative;
+  margin-top: 30px;
+  transition: transform 1s ease-in-out;
+}
+
+.skillsSlider.paused {
+  transition: none; /* Disable smooth transition while paused */
+}
+
+.skillCard {
+  min-width: 100%;
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease-in-out;
+}
+
+.skillHeading {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.skillList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skillList li {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.skillList li:hover {
+  color: #5cb85c;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.skillsContainer{}
+.text1 {
+  color: rgb(115, 196, 222);
+}
+
+.contact{
+  margin: 30px 0px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+.contactDiv{
+  background-color: white;
+  color: black;
+  width: 100vw;
+  display: flex;
+  padding: 50px 0px;
+  justify-content: space-around;
+}
+.contactDiv p{
+  background-color: black;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
 }
